@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESC to Return</title>
+    <style>
+        body {
+            width: 65%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            background-color: #777;
+            font-family: fantasy;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            cursor: none;
+        }
+        h1 {
+            margin: 5px 0px;
+            padding: 0px 15px;
+        }
+        .wrapper {
+            text-align: center;
+        }
+        .selected {
+            /* background-color:tomato ; */
+            text-shadow: 2px 2px 2px rgba(0,0,0,.6);
+        }
+    </style>
+</head>
+<body>
+    <h1>Page Two</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, recusandae?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus quisquam, eligendi ea, eos repudiandae molestiae, accusantium eius error odit accusamus totam. Harum excepturi ad voluptatibus officia eius inventore facilis laudantium!</p>
+    <script>
+        window.addEventListener('keydown', (e) => {
+            e.preventDefault()
+            if(e.code === 'Escape') {
+                window.location.replace('./arrowHandle.html')
+            }
+        })
+    </script>
+</body>
+</html>
