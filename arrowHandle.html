@@ -10,14 +10,30 @@
             margin: 0 auto;
             cursor: none;
             display: flex;
-            background-color: #777;
+            background-color: black;
             font-family: fantasy;
             justify-content: center;
             align-items: center;
             height: 100vh;
             overflow: hidden;
+            color: #bfbec2;
+        }
+        body::after {
+            content: "";
+            background: url('./background.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;   
         }
         h1 {
+            font-size: 36px;
+            
             margin: 5px 0px;
             padding: 0px 15px;
         }
@@ -26,7 +42,7 @@
         }
         .selected {
             /* background-color:tomato ; */
-            text-shadow: 2px 2px 2px rgba(0,0,0,.6);
+            text-shadow: 0px 0px 15px rgb(255, 38, 38);
         }
     </style>
 </head>

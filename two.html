@@ -8,18 +8,33 @@
         body {
             width: 65%;
             margin: 0 auto;
+            cursor: none;
             display: flex;
-            flex-direction: column;
-            background-color: #777;
-            font-family: fantasy;
             text-align: center;
+            flex-direction: column;
+            background-color: black;
+            font-family: fantasy;
             justify-content: center;
             align-items: center;
             height: 100vh;
             overflow: hidden;
-            cursor: none;
+            color: #bfbec2;
+        }
+        body::after {
+            content: "";
+            background: url('./background.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;   
         }
         h1 {
+            font-size: 36px;
             margin: 5px 0px;
             padding: 0px 15px;
         }
